@@ -22,8 +22,11 @@ namespace ToDoList
     }
 
     public class ToDoList
-    {
+    { 
+        public ToDoList()
+        {
 
+        }
     }
 
     public abstract class Product
@@ -34,7 +37,8 @@ namespace ToDoList
 
     public class BuyFood : Product
     {
-        public void Supermarket(string Naam, int Aantal)
+        string Melk;
+        public void Supermarket()
         {
             Naam = Melk;
             Aantal = 2;
@@ -43,7 +47,8 @@ namespace ToDoList
 
     public class Shopping : Product
     {
-        public void HudsonsBay(string Naam, int Aantal)
+        string Shoe;
+        public void HudsonsBay()
         {
             Naam = Shoe;
             Aantal = 1;
