@@ -34,19 +34,19 @@ namespace ToDoList
 
     public class BuyFood : Product
     {
-        public void Supermarket()
+        public void Supermarket(string Naam, int Aantal)
         {
-            string Naam = Melk;
-            int Aantal = 2;
+            Naam = Melk;
+            Aantal = 2;
         }
     }
 
     public class Shopping : Product
     {
-        public void HudsonsBay()
+        public void HudsonsBay(string Naam, int Aantal)
         {
-            string Naam = Shoe;
-            int Aantal = 1;
+            Naam = Shoe;
+            Aantal = 1;
         }
     }
 }
