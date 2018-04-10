@@ -38,7 +38,8 @@ namespace ToDoList
 
     public class BuyFood : Product
     {
-        string Milk;
+        string Milk = Naam;
+        int Aantal = 2;
         public void Supermarket(string Naam, int Aantal)
         {
             Naam = Milk;
@@ -48,7 +49,8 @@ namespace ToDoList
 
     public class Shopping : Product
     {
-        string Shoe;
+        public string Shoe = Naam;
+        int Aantal = 1;
         public void HudsonsBay(string Naam, int Aantal)
         {
             Naam = Shoe;
