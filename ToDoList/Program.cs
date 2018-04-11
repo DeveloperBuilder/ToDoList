@@ -32,8 +32,8 @@ namespace ToDoList
 
     public abstract class Product
     {
-        public string Naam;
-        public int Aantal;
+        public abstract string Naam();
+        public abstract int Aantal();
     }
 
     public class BuyFood : Product
