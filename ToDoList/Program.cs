@@ -38,11 +38,11 @@ namespace ToDoList
 
     public class BuyFood : Product
     {
-        public override string Naam(string Milk)
+        public override string Naam()
         {
-            return Milk;
+            return "Milk";
         }
-        public override int Aantal(int 2)
+        public override int Aantal()
         {
             return 2;
         }
@@ -50,11 +50,11 @@ namespace ToDoList
 
     public class Shopping : Product
     {
-        public override string Naam(string Shoe)
+        public override string Naam()
         {
-            return Shoe;
+            return "Shoe";
         }
-        public override int Aantal(int 1)
+        public override int Aantal()
         {
             return 1;
         }
