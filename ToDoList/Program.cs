@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ToDoList
 {
-    class Program
+    public class Program
     { 
     /* Instructies
     Maak een applicatie ToDoList. De applicatie ToDoList heeft een class ToDoList. 
@@ -16,9 +16,12 @@ namespace ToDoList
     Maak van product twee subclasses, namelijk BuyFood en Shopping en initialiseert in de subclasses voor ieder attribuut een waarde. 
     Laat in een demo-applicatie zien dat er BuyFood en Shopping in de ToDoList geplaatst kunnen worden. */
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-
+            ToDoList thisMorning = new ToDoList();
+            var thisAfternoon = thisMorning.tasks;
+            Console.WriteLine(thisAfternoon);
+            Console.ReadLine();
         }
     }
 
