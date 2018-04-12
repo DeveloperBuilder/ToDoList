@@ -18,16 +18,13 @@ namespace ToDoList
 
         static void Main(string[] args)
         {
+
         }
     }
 
     public class ToDoList
     {
-        public List<Product> products;
-        public ToDoList(Product products)
-        {
-            products = new Product();
-        }
+        public List<Product> tasks = new List<Product>();
     }
 
     public abstract class Product
