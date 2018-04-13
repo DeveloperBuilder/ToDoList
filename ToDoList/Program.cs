@@ -20,7 +20,10 @@ namespace ToDoList
         {
             ToDoList thisMorning = new ToDoList();
             var thisAfternoon = thisMorning.tasks;
-            Console.WriteLine(thisAfternoon);
+            foreach(var thisEvening in thisAfternoon)
+            {
+                Console.WriteLine(thisEvening);
+            }
             Console.ReadLine();
         }
     }
