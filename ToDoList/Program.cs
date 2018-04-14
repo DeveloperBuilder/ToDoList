@@ -22,7 +22,7 @@ namespace ToDoList
             var thisAfternoon = thisMorning.tasks;
             foreach(var thisEvening in thisAfternoon)
             {
-                Console.WriteLine(thisAfternoon);
+                Console.WriteLine(thisEvening);
             }
             Console.ReadLine();
         }
