@@ -22,7 +22,7 @@ namespace ToDoList
             var thisAfternoon = thisMorning.tasks;
             foreach(var thisEvening in thisAfternoon)
             {
-                Console.WriteLine(thisEvening);
+                Console.WriteLine(thisAfternoon);
             }
             Console.ReadLine();
         }
@@ -44,10 +44,12 @@ namespace ToDoList
         public override string Naam()
         {
             return "Milk";
+            Console.ForegroundColor = ConsoleColor.White;
         }
         public override int Aantal()
         {
             return 2;
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 
@@ -56,10 +58,12 @@ namespace ToDoList
         public override string Naam()
         {
             return "Shoe";
+            Console.ForegroundColor = ConsoleColor.DarkGray;
         }
         public override int Aantal()
         {
             return 1;
+            Console.ForegroundColor = ConsoleColor.DarkGray;
         }
     }
 }
