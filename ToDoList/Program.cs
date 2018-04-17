@@ -20,9 +20,9 @@ namespace ToDoList
         {
             ToDoList thisMorning = new ToDoList();
             var thisAfternoon = thisMorning.tasks;
-            foreach(var thisEvening in thisAfternoon.ToList.tasks)
+            foreach(var thisEvening in thisAfternoon)
             {
-                Console.WriteLine(thisEvening.Naam + thisEvening.Aantal);
+                Console.WriteLine(thisEvening);
             }
             Console.ReadLine();
         }
@@ -31,6 +31,11 @@ namespace ToDoList
     public class ToDoList
     {
         public List<Product> tasks = new List<Product>();
+
+        public ToDoList(Product tasks)
+        {
+            tasks = new tasks();
+        }
     }
 
     public abstract class Product
