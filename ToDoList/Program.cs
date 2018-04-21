@@ -18,7 +18,13 @@ namespace ToDoList
 
         public static void Main(string[] args)
         {
-            ToDoList thisMorning = new ToDoList();
+            ToDoList tasks = new ToDoList();
+            tasks.AddTask(new BuyFood());
+            tasks.AddTask(new Shopping());
+            foreach(var toDoTask in tasks.task)
+            {
+                Console.WriteLine($"The task are {toDoTask.Naam()} and the amount are {toDoTask.Aantal()}");
+            }
             Console.ReadLine();
         }
     }
@@ -29,7 +35,7 @@ namespace ToDoList
 
         public ToDoList()
         {
-            task = new List<Product>(task);
+            task = new List<Product>();
         }
 
         public void AddTask(Product product)
