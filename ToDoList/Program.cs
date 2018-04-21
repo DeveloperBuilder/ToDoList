@@ -19,22 +19,22 @@ namespace ToDoList
         public static void Main(string[] args)
         {
             ToDoList thisMorning = new ToDoList();
-            var thisAfternoon = thisMorning.tasks;
-            foreach(var thisEvening in thisAfternoon)
-            {
-                Console.WriteLine(thisEvening);
-            }
             Console.ReadLine();
         }
     }
 
     public class ToDoList
     {
-        public List<Product> tasks = new List<Product>();
+        public List<Product> task;
 
-        public ToDoList(Product tasks)
+        public ToDoList()
         {
-            tasks = new tasks();
+            task = new List<Product>(task);
+        }
+
+        public void AddTask(Product product)
+        {
+            task.Add(product);
         }
     }
 
@@ -48,13 +48,13 @@ namespace ToDoList
     {
         public override string Naam()
         {
-            return "Milk";
             Console.ForegroundColor = ConsoleColor.White;
+            return "Milk";
         }
         public override int Aantal()
         {
-            return 2;
             Console.ForegroundColor = ConsoleColor.White;
+            return 2;
         }
     }
 
@@ -62,13 +62,13 @@ namespace ToDoList
     {
         public override string Naam()
         {
-            return "Shoe";
             Console.ForegroundColor = ConsoleColor.DarkGray;
+            return "Shoe";
         }
         public override int Aantal()
         {
-            return 1;
             Console.ForegroundColor = ConsoleColor.DarkGray;
+            return 1;
         }
     }
 }
