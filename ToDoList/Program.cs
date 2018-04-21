@@ -23,7 +23,7 @@ namespace ToDoList
             tasks.AddTask(new Shopping());
             foreach(var toDoTask in tasks.task)
             {
-                Console.WriteLine($"The task are {toDoTask.Naam()} and the amount are {toDoTask.Aantal()}");
+                Console.WriteLine($"The task is {toDoTask.Naam()} and the amount is {toDoTask.Aantal()}");
             }
             Console.ReadLine();
         }
